@@ -20,11 +20,9 @@ for cls in ["plastic", "non_plastic"]:
 
     print(f"\n{cls}: {len(all_files)} total files, {len(image_files)} images, {len(non_image_files)} non-image files (e.g. .xml), {len(bad_files)} genuinely corrupt images")
 
-    # Remove the non-image files (e.g. .xml) since we don't need them for classification
     for f in non_image_files:
         os.remove(os.path.join(folder, f))
 
-    # Remove any genuinely broken images
     for f in bad_files:
         os.remove(os.path.join(folder, f))
 

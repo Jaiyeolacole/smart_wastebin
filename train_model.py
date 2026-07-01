@@ -16,13 +16,13 @@ val_test_ds = tf.keras.utils.image_dataset_from_directory(
 )
 
 class_names = train_ds.class_names
-print("Classes:", class_names)  # should print ['non_plastic', 'plastic']
+print("Classes:", class_names)  #print ['non_plastic', 'plastic']
 
 val_batches = tf.data.experimental.cardinality(val_test_ds)
 test_ds = val_test_ds.take(val_batches // 2)
 val_ds = val_test_ds.skip(val_batches // 2)
 
-# Data augmentation — only applied during training, helps the model generalize
+# Data augmentation 
 data_augmentation = tf.keras.Sequential([
     tf.keras.layers.RandomFlip("horizontal"),
     tf.keras.layers.RandomRotation(0.06),
