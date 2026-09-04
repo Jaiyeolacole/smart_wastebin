@@ -437,11 +437,10 @@ MOTION_MIN_AREA  = 3000   # minimum changed area in pixels
 
 ## License
 
-This project was developed as a Final Year Undergraduate Engineering Project. All code is original work by the author (Student ID: EEE_22_0060). Dataset sources are credited to their respective Kaggle authors.
+This project was developed as a Final Year Undergraduate Engineering Project. All code is original work by the author (Student ID: EEE_22_00XX). Dataset sources are credited to their respective Kaggle authors.
 
 ---
 
 *Last updated: September 2026*
 EOF
-echo "README written successfully"
-Output
+
